@@ -13,14 +13,24 @@ export default class Menu extends Component {
                                 <li>
                                     <Link to="/MOC">Dashboard</Link><i className="fa fa-dashboard fa-fw" />
                                 </li>
+                                <li className={5}>
+                                    <a href="#"> Committee<span className="fa fa-chevron-right" style={{ float: 'right' }} /></a>
+                                    <ul className="nav nav-second-level">
+                                        <li>
+                                            <Link to="/MOC/ViewCommeetiee"> View Committee<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
+                                        </li>
+                                        
+                                    </ul>
+                                    {/* /.nav-second-level */}
+                                </li>
                                 <li>
                                     <a href="#"> Meeting<span className="fa fa-chevron-right" style={{ float: 'right' }} /></a>
                                     <ul className="nav nav-second-level">
                                         <li>
-                                            <Link to="/MOC/AddMeeting"> View Recent Meetings<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
+                                            <Link to="/MOC/AddMeeting"> View Upcoming Meetings<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
                                         </li>
                                         <li>
-                                            <Link to="/MOC/ViewMeeting"> View Upcomin Meetings<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
+                                            <Link to="/MOC/ViewMeeting"> View Recent Meetings<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
                                         </li>
                                     </ul>
                                 </li>
@@ -42,9 +52,9 @@ export default class Menu extends Component {
                                         <li>
                                             <Link to="/MOC/ViewTask"> View Task<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <Link to="/MOC/AddmoreTask"> Add Task<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                     {/* /.nav-second-level */}
                                 </li>
@@ -58,16 +68,7 @@ export default class Menu extends Component {
                                     </ul>
                                     {/* /.nav-second-level */}
                                 </li>
-                                <li className={5}>
-                                    <a href="#"> Commeetiee<span className="fa fa-chevron-right" style={{ float: 'right' }} /></a>
-                                    <ul className="nav nav-second-level">
-                                        <li>
-                                            <Link to="/MOC/ViewCommeetiee"> View Commeetiiee<span className="fa fa-share" style={{ float: 'left', margin: '3px' }}>&nbsp;</span></Link>
-                                        </li>
-                                        
-                                    </ul>
-                                    {/* /.nav-second-level */}
-                                </li>
+                                
                                 <li className={3}>
                                     <a href="#"> Reviews<span className="fa fa-chevron-right" style={{ float: 'right' }} /></a>
                                     <ul className="nav nav-second-level">
